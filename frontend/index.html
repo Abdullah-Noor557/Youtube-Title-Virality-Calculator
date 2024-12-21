@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Title Virality Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Youtube Title Virality Calculator</h1>
+        <div class="input-group">
+            <input type="text" id="titleInput" placeholder="Enter your YouTube title..."
+                aria-label="YouTube title input">
+            <button id="calculateBtn">Calculate Score</button>
+        </div>
+        <div id="result" class="result">
+            <h2>Virality Score</h2>
+            <span id="score">0</span>
+        </div>
+        <div id="error" class="error">
+            An error occurred. Please try again.
+        </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
