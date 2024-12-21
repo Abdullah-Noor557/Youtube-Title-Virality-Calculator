@@ -47,7 +47,7 @@ def get_virality_score_transformers(youtube_title: str) -> float:
     elif label.lower() == "neutral":
         base_score = 1.0
     else:  # "negative"
-        base_score = -2.0  # Negative gets higher penalty to emphasize virality of strong negativity
+        base_score = 2.0  # Negative gets higher penalty to emphasize virality of strong negativity
 
     # Adjust raw score to amplify strong sentiments
     raw_score = base_score * confidence * 3.0  # Increased amplification
